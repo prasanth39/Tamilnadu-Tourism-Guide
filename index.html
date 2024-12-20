@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamil Nadu Tourist Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tamil Nadu Tourist Guide</h1>
+        <p>Discover the top tourist spots in Tamil Nadu by selecting your preferred month, budget, and travel dates. Let us help you plan your perfect getaway based on your preferences!</p>
+
+        <label for="month-select">Select Month:</label>
+        <select id="month-select">
+            <option value="" disabled selected>Select a month</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+
+        <label for="budget-select">Select Budget Range:</label>
+        <select id="budget-select">
+            <option value="" disabled selected>Select a budget range</option>
+            <option value="low">₹0 - ₹5000</option>
+            <option value="medium">₹5001 - ₹10000</option>
+            <option value="high">₹10001+</option>
+        </select>
+
+        <label for="start-date">Select Start Date:</label>
+        <input type="date" id="start-date">
+
+        <label for="end-date">Select End Date:</label>
+        <input type="date" id="end-date">
+
+        <button onclick="getRecommendations()">Get Recommendations</button>
+        <div class="recommendations" id="recommendations"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
